@@ -1,0 +1,39 @@
+.movieDetiles {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.goBackBtn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em 0.6em;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: inherit;
+  background-color: #1976d2;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.movieContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.movieDescr {
+  margin-left: 20px;
+}
+
+.genres {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  padding: 0;
+  list-style: none;
+}
+
+.hrLine {
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,15 @@
+.actorsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actorItem {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.actorDescr {
+  margin-left: 20px;
+}

@@ -1,0 +1,17 @@
+.searchForm {
+  margin-top: 30px;
+}
+
+.searchInput {
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.7em 1.2em;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: inherit;
+  color: #fff;
+  background-color: #363636;
+  transition: border-color 0.25s;
+  margin-right: 10px;
+}
