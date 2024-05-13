@@ -34,7 +34,7 @@ export default function MovieReviews() {
         <ul className={css.revsList}>
           {review.results.map((el) => (
             <li key={el.id} className={css.revItem}>
-              <h3>Author:{`${el.author}`}</h3>
+              <h3>Author: {`${el.author}`}</h3>
               <p>{el.content}</p>
             </li>
           ))}
