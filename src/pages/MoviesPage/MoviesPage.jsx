@@ -10,15 +10,10 @@ export default function MoviesPage() {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [query, setQuery] = useState("");
   const [searchParams, setSearchParams] = useSearchParams();
   const movieParam = searchParams.get("query") ?? "";
 
   useEffect(() => {
-    if (query === "") {
-      return;
-    }
-
     async function fetchMovies() {
       try {
         setError(false);
@@ -33,12 +28,11 @@ export default function MoviesPage() {
     }
 
     fetchMovies();
-  }, [movieParam, query]);
+  }, [movieParam]);
 
   const handleSearchMovie = (newMovie) => {
     searchParams.set("query", newMovie);
     setSearchParams(searchParams);
-    setQuery(newMovie);
   };
 
   return (
