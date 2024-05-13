@@ -27,6 +27,12 @@ export default function MoviesPage() {
       }
     }
 
+    if (movieParam) {
+      fetchMovies();
+    } else {
+      setMovies([]);
+    }
+
     fetchMovies();
   }, [movieParam]);
 
